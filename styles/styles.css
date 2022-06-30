@@ -5,6 +5,7 @@ body {
         "sidebar main" 1fr
         / auto 1fr;
         min-height: 100vh;
+        font-family: 'Gantari', sans-serif;
 }
 
 body > header {
