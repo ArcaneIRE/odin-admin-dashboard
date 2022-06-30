@@ -8,8 +8,71 @@ body {
         font-family: 'Gantari', sans-serif;
 }
 
-body > header {
+#header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto);
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.30);
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+}
+
+#header-search {
+    display: flex;
+}
+
+#header-search input {
+    width: clamp(15rem, 30vw, 30rem);
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem 2rem .5rem 1rem;
+    background-color: rgb(218, 218, 218);
+}
+
+#header-search input:focus {
+    outline: 1px solid blue;
+}
+
+#header-search img {
+    margin-left: -30px;
+    filter: invert(40%);
+}
+
+#header-notification {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#header-notification:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+#header-profile-picture {
+    height: 3rem;
+    border: 3px solid rgb(19, 196, 19);
+    border-radius: 50px;
+}
+
+#header-profile-picture:hover {
+    filter: brightness(120%);
+}
+
+#header-username:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+#header-username {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
 }
 
 nav {
