@@ -198,10 +198,6 @@ nav a {
     display: contents;
 }
 
-.recent-chat:hover {
-    background-color: grey;
-}
-
 .recent-chat img {
     height: 3.5rem;
     box-sizing: border-box;
