@@ -79,7 +79,7 @@ body {
 nav {
     grid-area: sidebar;
     height: 100%;
-    width: clamp(205px, 25vw, 300px);
+    width: clamp(205px, 25vw, 250px);
     padding: clamp(1rem, 2vw, 2rem);
     color: white;
     background-color: #9333EA;
