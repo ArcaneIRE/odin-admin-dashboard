@@ -184,3 +184,61 @@ nav a {
     background-color: rgb(218, 218, 218);
 }
 
+.recent-messages {
+    display: grid;
+    grid: auto / 4rem 70%;
+    gap: 2rem 1rem ;
+    max-width: 100%;    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.recent-chat {
+    display: contents;
+}
+
+.recent-chat:hover {
+    background-color: grey;
+}
+
+.recent-chat img {
+    height: 3.5rem;
+    box-sizing: border-box;
+    border: 4px solid grey;
+    border-radius: 50%;
+}
+
+.recent-chat img.online {
+    border-color: rgb(19, 196, 19);
+}
+
+.recent-chat img.away {
+    border-color: rgb(228, 156, 0);
+}
+
+.recent-chat-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .2rem;
+    height: 100%;
+    max-width: 100%;
+}
+
+.recent-chat-details h3 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.recent-chat-details h3::before {
+    content: "@";
+}
+
+.recent-chat-details p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(39, 39, 39);
+}
