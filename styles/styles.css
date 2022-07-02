@@ -276,6 +276,7 @@ nav a {
 }
 
 .kanban-task {
+    position: relative;
     padding: .7rem;
     border-radius: .5rem;
     background-color: rgb(255, 228, 106);
