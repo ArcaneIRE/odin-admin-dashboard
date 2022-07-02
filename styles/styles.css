@@ -78,9 +78,10 @@ body {
 
 nav {
     grid-area: sidebar;
+    box-sizing: border-box;
     height: 100%;
-    width: clamp(205px, 25vw, 250px);
-    padding: clamp(1rem, 2vw, 2rem);
+    width: clamp(206px + 4rem, 20vw, 300px + 2rem);
+    padding: 2rem;
     color: white;
     background-color: #9333EA;
     font-weight: 600;
@@ -126,11 +127,12 @@ nav a {
     grid-area: main;
     display: grid;
     grid-auto-flow: row dense;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     grid-auto-rows: min-content;
     gap: 2rem;
-    padding: 2rem;
+    box-sizing: border-box;
     min-height: 100%;
+    padding: 2rem;
     background-color: rgb(218, 218, 218);
 }
 
