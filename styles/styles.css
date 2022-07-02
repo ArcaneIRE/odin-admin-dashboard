@@ -238,3 +238,63 @@ nav a {
     text-overflow: ellipsis;
     color: rgb(39, 39, 39);
 }
+
+.kanban {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.kanban-to-do, .kanban-doing, .kanban-done {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.kanban-title {
+    text-align: center;
+    margin: 0;
+    padding: .7rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.kanban-to-do .kanban-title {
+    background-color: #22D3EE;
+}
+
+.kanban-doing .kanban-title {
+    background-color: #FB923C;
+}
+
+.kanban-done .kanban-title {
+    background-color: #4ADE80;
+}
+
+.kanban-task {
+    padding: .7rem;
+    border-radius: .5rem;
+    background-color: rgb(255, 228, 106);
+    transition: box-shadow .2s;
+}
+
+.kanban-task:hover {
+    top: -2px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-task-title {
+    margin: 0;
+    font-weight: 600;
+}
+
+.kanban-task-content {
+    margin: .4rem 0 0 0;
+    color: rgb(39, 39, 39);
+}
+
+.kanban-task-content a{
+    color: inherit
+}
