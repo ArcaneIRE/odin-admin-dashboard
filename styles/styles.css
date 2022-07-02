@@ -126,7 +126,7 @@ nav a {
     grid-area: main;
     display: grid;
     grid-auto-flow: row dense;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) minmax(20ch, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: min-content;
     gap: 2rem;
     padding: 2rem;
