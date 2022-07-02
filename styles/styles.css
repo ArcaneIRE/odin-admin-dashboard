@@ -301,3 +301,59 @@ nav a {
 .kanban-task-content a{
     color: inherit
 }
+
+.stats h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.bar-chart {
+    position: relative;
+    display: flex;
+    margin: .5rem 0;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.bar-chart > div {
+    display: flex;
+    height: 3rem;
+    width: var(--w);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bar-chart:hover {
+    top: -2px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bar-chart-green {
+    background-color: #4ADE80;
+}
+
+.bar-chart-grey {
+    background-color: rgba(231, 231, 231, 0.87);;
+}
+
+.bar-chart-red {
+    background-color: #fb3c3c;
+}
+
+.bar-chart-rainbow {
+    border-radius: .5rem;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%
+    );
+}
