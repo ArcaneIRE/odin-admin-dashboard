@@ -127,13 +127,19 @@ nav a {
     grid-area: main;
     display: grid;
     grid-auto-flow: row dense;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns: minmax(400px, 3fr) minmax(400px, 2fr);
     grid-auto-rows: min-content;
     gap: 2rem;
     box-sizing: border-box;
     min-height: 100%;
     padding: 2rem;
     background-color: rgb(218, 218, 218);
+}
+
+@media only screen and (max-width: 1206px) {
+    #main {
+        grid-template-columns: 1fr;
+    }
 }
 
 .main-card > h2{
